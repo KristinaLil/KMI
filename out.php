@@ -21,7 +21,7 @@ $kmi = round($kg / $cm / $cm, 1);
         <div class="row">
             <div class="col">
                 <div class="w-50 m-auto mt-5">
-                    <div class="card text-center">
+                    <div class="card text-center mb-5">
                         <div class="card-header">
                             <h5>KMI Skaičiuoklė</h5>
                         </div>
@@ -45,6 +45,33 @@ $kmi = round($kg / $cm / $cm, 1);
                                     }
                                     ?>
                                 </p>
+                                <table class="table table-bordered mt-5">
+                                    <tr>
+                                        <th>KMI apskaičiavimas</th>
+                                        <th>Įvertinimas</th>
+                                        <th>Lydinčių, lėtinių ligų rizikos</th>
+                                    </tr>
+                                    <tr class="table-primary">
+                                        <td>Mažiau nei 18,5</th>
+                                        <td>Per mažas svoris</td>
+                                        <td>Dėl mitybos nepakankamumo padidėjusi sergamumo rizika</td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <td>18,5 - 24,9</th>
+                                        <td>Normalus svoris</td>
+                                        <td>Nėra rizikos</td>
+                                    </tr>
+                                    <tr class="table-warning">
+                                        <td>25,0 - 29,9</th>
+                                        <td class="table-warning">Antsvoris</td>
+                                        <td>Nedidelė rizika</td>
+                                    </tr>
+                                    <tr class="table-danger">
+                                        <td>Daugiau nei 30</th>
+                                        <td>Nutukimas</td>
+                                        <td>Didelė rizika</td>
+                                    </tr>
+                                </table>
                                 <a href="index.php" class="btn btn-warning" role="button">Grįžti atgal</a>
                             </div>
                         </div>
